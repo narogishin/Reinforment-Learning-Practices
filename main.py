@@ -5,9 +5,8 @@ state = env.reset()
 
 done = False
 
-while not done:
-    action = 2
-    new_state, reward, done, info, _ = env.step(action)
-    env.render()
+action = 2
+new_state, reward, done, info, _ = env.step(action)
+env.render()
 
 env.close()
