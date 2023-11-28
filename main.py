@@ -1,8 +1,7 @@
 import gymnasium as gym
 import numpy as np
-import matplotlib.pyplot as plt
 
-env = gym.make('MountainCarContinuous-v0', render_mode="rgb_array")
+env = gym.make('MountainCarContinuous-v0', render_mode="human")
 env.reset()
 done = False
 
