@@ -6,8 +6,8 @@ env = gym.make('MountainCar-v0', render_mode="human")
 LEARNING_RATE = 0.1
 DISCOUNT = 0.95
 Action_SPACE = 3
-EPISODES = 2500
-SHOW_EVERY = 200
+EPISODES = 250
+SHOW_EVERY = 20
 
 
 def get_discrete_state(state):
@@ -22,7 +22,7 @@ q_table = np.random.uniform(low=-2, high=0, size=DISCRETE_OS_SIZE+[Action_SPACE]
 for episode in range(EPISODES):
     if episode % SHOW_EVERY == 0:
         render = True
-        # print(episode)
+        print(episode)
     else:
         render  = False
 
@@ -32,7 +32,7 @@ for episode in range(EPISODES):
         action = np.argmax(q_table[discrete_state])
         new_state, reward, done, info, _ = env.step(action)
         new_discrete_state = get_discrete_state(new_state)
-        
+
         if render:
             env.render()
 
