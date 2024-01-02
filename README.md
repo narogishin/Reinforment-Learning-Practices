@@ -1,0 +1,1 @@
+In this project, I will be organizing my work on studying reinforcement learning with Gymnasium in Python. I will be implementing and experimenting with various reinforcement learning algorithms using the Gym library. The goal is to gain a deeper understanding of reinforcement learning concepts and apply them to solve different environments provided by Gymnasium.
